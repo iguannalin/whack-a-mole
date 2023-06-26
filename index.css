@@ -37,6 +37,14 @@ body {
   background-color: var(--alt-bg-color);
 }
 
+button {
+  z-index: 1000;
+}
+
+p {
+  z-index: 0;
+}
+
 button, p {
   position: absolute;
   border: none;

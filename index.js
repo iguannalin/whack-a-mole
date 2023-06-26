@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
   let wOffset = window.innerWidth/6;
   let hOffset = window.innerHeight/6;
   let w = window.innerWidth - (wOffset);
-  let h = window.innerHeight - (hOffset);
+  let h = window.innerHeight - hOffset;
   const parent = document.getElementById("parent");
   const heading = document.getElementById("heading");
   let button = document.createElement("button");
@@ -25,8 +25,8 @@ window.addEventListener("load", () => {
   function reposition(elem) {
     heading.innerHTML = `<h1>:(</h1>`;
     elem.style.display = "block";
-    elem.style.top = `${Math.floor(getRandomInt(w),wOffset)}px`;
-    elem.style.left = `${Math.floor(getRandomInt(h),hOffset)}px`;
+    elem.style.left = `${Math.max(getRandomInt(w),wOffset)}px`;
+    elem.style.top = `${Math.max(getRandomInt(h),hOffset)}px`;
   }
 
   function getRandomInt(max) {

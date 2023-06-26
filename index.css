@@ -31,7 +31,7 @@ body {
 #heading {
   border: 3px solid white;
   border-radius: 5px;
-  margin-top: 15%;
+  margin-top: 25%;
   padding: 0 16px;
   width: fit-content;
   background-color: var(--alt-bg-color);
